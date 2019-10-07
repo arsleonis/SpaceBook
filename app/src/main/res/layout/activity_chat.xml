@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.chat.ChatActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvChat"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/etNewMessageText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:itemCount="6"
+        tools:listitem="@layout/item_member" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNewMessageText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_message_light"
+        android:ellipsize="start"
+        android:hint="@string/chat_type_message"
+        android:padding="@dimen/margin_normal"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glChatBottom" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/btnSendMessage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_message_light"
+        android:padding="@dimen/margin_normal"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_send_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/glChatBottom" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glChatBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

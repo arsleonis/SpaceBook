@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.login.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/spacebook_chat_logo"
+        app:layout_constraintBottom_toTopOf="@+id/glLogoBottomMargin"
+        app:layout_constraintEnd_toStartOf="@+id/glEndPadding"
+        app:layout_constraintStart_toStartOf="@+id/glStartPadding"
+        app:layout_constraintTop_toTopOf="@+id/glLogoTopMargin" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etLoginName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_message_light"
+        android:ellipsize="start"
+        android:hint="@string/login_hint_name"
+        android:padding="@dimen/margin_normal"
+        android:singleLine="true"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glEndPadding"
+        app:layout_constraintStart_toStartOf="@+id/glStartPadding"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_large"
+        android:text="@string/login_button_connect"
+        android:textColor="@color/color_message_light"
+        android:textSize="@dimen/text_size_normal"
+        android:theme="@style/SpaceThemeButtonConnect"
+        app:layout_constraintEnd_toStartOf="@+id/glEndPadding"
+        app:layout_constraintStart_toStartOf="@+id/glStartPadding"
+        app:layout_constraintTop_toTopOf="@+id/glBtnConnectTopMargin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndPadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLogoTopMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glLogoBottomMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glBtnConnectTopMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

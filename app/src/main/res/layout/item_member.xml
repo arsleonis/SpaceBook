@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_normal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMemberMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="23:01" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMemberMessageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:maxLines="1"
+        android:padding="@dimen/margin_small"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/glMemberMessageEndMargin"
+        app:layout_constraintStart_toEndOf="@+id/tvMemberMessageTime"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Олег Газманов" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMemberMessageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_message_dark"
+        android:gravity="start"
+        android:padding="@dimen/margin_normal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/glMemberMessageEndMargin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMemberMessageTime"
+        tools:text="Я сегодня не такой, как вчера..." />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glMemberMessageEndMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "320509073602",
+    "firebase_url": "https://spacebook-3d6fb.firebaseio.com",
+    "project_id": "spacebook-3d6fb",
+    "storage_bucket": "spacebook-3d6fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320509073602:android:7e0696dd40f322f3",
+        "android_client_info": {
+          "package_name": "com.zrz.android.spacebook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320509073602-8232ur2eldg5b03kq4h6u4v4nitkmloc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIJt4jXIl5TSe5KojLPuTOhIH-ZaY_YX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320509073602-8232ur2eldg5b03kq4h6u4v4nitkmloc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

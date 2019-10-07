@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">SpaceBook</string>
+    <string name="login_hint_name">Name…</string>
+    <string name="login_button_connect">connect</string>
+    <string name="login_field_name_is_empty">Field \"Name\" is empty</string>
+    <string name="chat_activity_name">Chatroom</string>
+    <string name="chat_type_message">Type a message…</string>
+    <string name="chat_button_send_message">Button send message</string>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_normal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOwnMessageTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_small"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="23:02" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOwnMessageName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="1"
+        android:padding="@dimen/margin_small"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_small"
+        app:layout_constraintEnd_toStartOf="@+id/tvOwnMessageTime"
+        app:layout_constraintStart_toStartOf="@+id/glOwnMessageStartMargin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Фёдор Петров" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOwnMessageText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_message_light"
+        android:gravity="start"
+        android:padding="@dimen/margin_normal"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/glOwnMessageStartMargin"
+        app:layout_constraintTop_toBottomOf="@+id/tvOwnMessageTime"
+        tools:text="А вчера я был совсем никакой" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glOwnMessageStartMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
